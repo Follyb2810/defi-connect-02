@@ -8,7 +8,15 @@
 :root{
   --colorBlack: #000000;
 --colorBlue:#184EE6;
+--fagbg:-- #EBEDF3;
 
+}
+:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+::placeholder{
+  color: white;
 }
 .colorBlack{
   color: var(--colorBlack);
@@ -19,17 +27,20 @@
 .bg{
   background: linear-gradient(180deg, rgba(4, 55, 207, 0.29) 0%, rgba(255, 255, 255, 0) 63.02%);
 }
+.fagBg{
+  background:#EBEDF3;
+}
 .logo{
   width: 70px;
   height: 70px;
 }
 .fs-head{
   font-family: Poppins;
-  font-size: 30px;
+  font-size: 28px;
 }
 .fs-subhead{
   font-family: Poppins;
-  font-size: 28px;
+  font-size: 24px;
 }
 .fs-title{
   font-family: Poppins;
@@ -130,19 +141,42 @@ input:focus{
   justify-content: center;
   align-items: center;
   height: 60vh;
+  padding: 40px;
 }
 
 .contactContent {
   background-color: #f9f9f9;
-  border-radius: 10px;
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-inline: 20%;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  
+  
 }
 .contactForm{
-  width: 70%;
 
+}
+.form-control{
+  background: #9A9DA4;
+
+}
+/* ! partner */
+.partner{
+  height:200px;
+  width: 100%;
+}
+.black-input{
+  background: #9A9DA4;
+  color: #fff;
+  width: 100%;
+  display: block;
+  padding: 10px;
+
+}
+.black-input::placeholder {
+  color: white; /* Set the desired placeholder color */
 }
 /*.accordion-button:;
   :after ;
@@ -186,13 +220,21 @@ input:focus{
 .accordion .card-header.collapsed:after {
   content: '\f068';
 } */
-/* Custom style */
+/*! Custom style */
+
+.accordion-button {
+  border: 2px solid red;
+}
+.accordion-item {
+  border-bottom: 2px solid  #9A9DA4 !important;
+  border-top: 2px solid  #9A9DA4 !important;
+}
+
 .accordion-button::after {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e")!important;
-  transform: scale(.7) !important;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='blue' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e")!important;
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e")!important;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='blue' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e")!important;
 }
 /* .accordion {
   --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
@@ -235,6 +277,8 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 }
 }
 @media (max-width:768px) {
+  /* !contact */
+  .contactContent {padding-inline: 5%;}
   .whyDefiImage{
     height: 200px;
     width: 200px;
@@ -285,23 +329,23 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   }
   .fs-head{
     font-family: Poppins;
-    font-size: 30px;
+    font-size: 24px;
   }
   .fs-subhead{
     font-family: Poppins;
-    font-size: 28px;
+    font-size: 20px;
   }
   .fs-title{
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 18px;
   }
   .fs-subtitle{
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 16px;
   }
   .fs-body{
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 14px;
   }
   .fs-subbody{
     font-family: Poppins;
@@ -335,23 +379,23 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   }
   .fs-head{
     font-family: Poppins;
-    font-size: 26px;
+    font-size: 24px;
   }
   .fs-subhead{
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 22px;
   }
   .fs-title{
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 18px;
   }
   .fs-subtitle{
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 16px;
   }
   .fs-body{
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 14px;
   }
   .fs-subbody{
     font-family: Poppins;

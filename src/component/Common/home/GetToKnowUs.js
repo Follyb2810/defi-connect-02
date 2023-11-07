@@ -11,16 +11,16 @@ const GetToKnowUs = () => {
         <Template title={title}>
         <Row className='justify-content-between align-items-center gap-2 gap-md-0'>
             {
-                geToKnowData.map((get,data)=>(
-                    <Col sm={12} md={4}>
+                geToKnowData.map((data,index)=>(
+                    <Col sm={12} md={4} key={index}>
                     <div className='p-3 text-start border border-1 shadow-lg  rounded-5 getTokowCard'>
                     <div className='d-flex justify-content-between align-content-center getTokowCardHead'>
-                    <h6 className='fw-bolder fs-title'>{get.title}</h6>
-                    <img src={get.img} alt='' style={{width:'30px'}}/>
+                    <h6 className='fw-bolder fs-title'>{data.title}</h6>
+                    <img src={data.img} alt='' style={{width:'30px'}}/>
                         
                     </div>
                     <div >
-                      <p className='fs-body m-0'>{get.para}</p>
+                      <p className='fs-body m-0'>{data.para}</p>
                       <Button variant="primary">Learn More <FaArrowCircleRight/></Button>
                     </div>
                   </div>

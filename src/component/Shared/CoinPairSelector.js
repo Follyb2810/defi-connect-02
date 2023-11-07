@@ -2,7 +2,7 @@ import React from 'react';
 
 const CoinPairSelector = ({amount,selectedCoin,handleAmountChange,handleCoinChange}) => {
   return (
-    <section className='d-flex '>
+    <section className='d-flex flex-column gap-3 gap-md-0 flex-sm-row flex-1 '>
       <input
         type='number'
         placeholder="Enter amount"

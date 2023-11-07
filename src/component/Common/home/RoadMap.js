@@ -17,7 +17,7 @@ const RoadMap = () => {
                 <Col xm={12} md={6} key={index}>
                    <section className='position-relative mb10'>
                      <div className='roadCardTop rounded-5 p-3 '>{data.head}</div>
-                     <div className='roadCard pt-5 text-center'>
+                     <div className='roadCard pt-5 text-center rounded-4'>
                        <p className='p-2'>{data.body}</p>
                        <p className='p-2'>{data.body2}</p>
                      </div>

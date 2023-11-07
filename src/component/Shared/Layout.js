@@ -6,8 +6,8 @@ import { Container } from 'react-bootstrap'
 
 const Layout = () => {
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-            <Container fluid style={{ flex: 1 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh',width:'100%' }}>
+            <Container fluid style={{ flex: 1,width:'100%', }}>
                 <NavBar/>
                 <Outlet/>
             </Container>

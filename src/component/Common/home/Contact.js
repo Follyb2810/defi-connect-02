@@ -2,29 +2,23 @@ import React from 'react'
 import { Button, Form } from 'react-bootstrap'
 
 const Contact = () => {
-    return (
-        <section className='contactContainer'>
-        <section className='contactContent p-5'>
-         <Form className='bg-white  contactForm'>
-         <h3 className='fw-bold text-center text-primary'>Contact Us</h3>
-         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-           <Form.Label>Enter Your Name</Form.Label>
-           <Form.Control type="email" placeholder="name@example.com" />
-         </Form.Group>
-         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-           <Form.Label>Valid Email address</Form.Label>
-           <Form.Control type="email" placeholder="name@example.com" />
-         </Form.Group>
-         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-           <Form.Label>Message</Form.Label>
-           <Form.Control as="textarea" rows={3} />
-         </Form.Group>
-         <Button className='w-50 mx-auo'>Submit</Button>
-       </Form>
-         </section>
-            
-        </section>
-    )
+  return (
+    <section className='contactContainer'>
+      <section className='contactContent rounded-5 py-5'>
+        <Form className='bg-white contactForm '>
+          <h3 className='fw-bold text-center text-primary fs-subhead'>Contact Us</h3>
+           <input type='text' className='black-input mt-3' placeholder='Enter your Name'/>
+           <input type='text' className='black-input mt-3' placeholder='Valid Email Address'/>
+           <textarea className='black-input mt-3' placeholder='Message'
+           rows="4" cols="50" maxlength="200"
+           />
+          <div className="d-flex justify-content-center mt-4">
+            <Button className='w-50'>Submit</Button>
+          </div>
+        </Form>
+      </section>
+    </section>
+  )
 }
 
 export default Contact

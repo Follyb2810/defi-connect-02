@@ -13,7 +13,7 @@ const Solution = () => {
             <Col sm={12} md={6}>
               {
                 solutionDataCard.map((sol,index)=>(
-                <section className='row my-4'>
+                <section className='row my-4' key={index}>
                    <img src={sol.img} alt='' className='col-3' style={{width:'75px',height:'75px'}}/>
                    <div className='col-9 text-start'>
                      <h6 className='fs-body'>{sol.cardHeader}</h6>

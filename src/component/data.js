@@ -209,33 +209,33 @@ const SliderData = [
 
 const FagData = [
     {
-            id:1,
-            ques:"ques?",
+            id:0,
+            ques:"How do DEFI CONNECT works?",
             ans:'helo'
     },
     {
             id:1,
-            ques:"ques?",
+            ques:"How quickly do i get money?",
             ans:'helo'
     },
     {
-            id:1,
-            ques:"ques?",
+            id:2,
+            ques:"What is the interest rate?",
             ans:'helo'
     },
     {
-            id:1,
-            ques:"ques?",
+            id:3,
+            ques:"What is the loan-to-value?",
             ans:'helo'
     },
     {
-            id:1,
-            ques:"ques?",
+            id:4,
+            ques:`What is the value of my collateral changes before i repay my credit line?`,
             ans:'helo'
     },
     {
-            id:1,
-            ques:"ques?",
+            id:5,
+            ques:`How does DEFI CONNECT keep my collateral safe?`,
             ans:'helo'
     }
     
@@ -317,19 +317,17 @@ const geToKnowData = [
 ]
 
 const PartnerContent= {
-    subtitle:`Move Faster with
-    Deficonnect 
-    Partners`,
+    subtitle:`Move Faster with Deficonnect Partners`,
     body:`We know your time is valuable. Find a partner
     to quickly
     deliver the Deficonnect experience 
     you need of use Deficonnect Apps
     to simply 
     borrow your crypto with o% interest.`,
-    img1:require('./asset/images/simplified.svg').default,
-    img2:require('./asset/images/simplified.svg').default,
-    img3:require('./asset/images/simplified.svg').default,
-    img4:require('./asset/images/simplified.svg').default,
+    img1:require('./asset/images/cost.svg').default,
+    img2:require('./asset/images/corporate.svg').default,
+    img3:require('./asset/images/corporate.svg').default,
+    img4:require('./asset/images/business.jpg').default,
 
 }
 
