@@ -1,6 +1,19 @@
 import React from 'react';
 
 const CoinPairSelector = ({amount,selectedCoin,handleAmountChange,handleCoinChange}) => {
+
+  const cryptoData = [
+    { name: "Select Coin", symbol: "Select Coin" },
+    { name: "bitcoin", symbol: "BTC" },
+    { name: "ethereum", symbol: "ETH" },
+    { name: "litecoin", symbol: "LTC" },
+    { name: "xrp", symbol: "XRP" },
+    { name: "stellar", symbol: "XLM" },
+    { name: "chainlink", symbol: "LINK" },
+    { name: "polkadot", symbol: "DOT" },
+    { name: "yearn.finance", symbol: "YFI" },
+  ];
+
   return (
     <section className='d-flex flex-column gap-3 gap-md-0 flex-sm-row flex-1 '>
       <input
@@ -20,13 +33,12 @@ const CoinPairSelector = ({amount,selectedCoin,handleAmountChange,handleCoinChan
         required
         style={{border: '1px solid #ccc', borderRadius: '5px', padding: '5px'}}
       >
-        <option value="">Select Coin</option>
-        <option value="btc">Bitcoin</option>
-        <option value="eth">Ethereum</option>
-        <option value="ltc">Litecoin</option>
-        <option value="xrp">Ripple</option>
-        <option value="bnb">BNB</option>
-        <option value="eos">EOS</option>
+       {
+        cryptoData.map((data,index)=>(
+          <option value={data.name} key={index}>{data.symbol}</option>
+        ))
+       }
+       
       </select>
     </section>
   );

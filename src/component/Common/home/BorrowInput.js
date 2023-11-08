@@ -13,6 +13,8 @@ const BorrowInput = () => {
   const [selectedCoin, setSelectedCoin] = useState('');
   const [selectedCoinPair, setSelectedCoinPair] = useState('');
   const [conversionRate, setConversionRate] = useState(null);
+  // const [order, setOrder] = useState([]);
+
 
   const BorrowInpuData = templatetHead[6];
   console.log(BorrowInpuData);
@@ -40,29 +42,21 @@ const BorrowInput = () => {
     e.preventDefault();
     console.log(`You selected ${amount} ${selectedCoin}`);
     console.log(`You selected ${amountPair} ${selectedCoinPair}`);
-    // const res =await fetch( `https://api.coingecko.com/api/v3/simple/price?ids=${selectedCoin.toLowerCase()}&vs_currencies=${selectedCoinPair.toLowerCase()}`)
-    // const res =await fetch(`https://api.coingecko.com/api/v3/coins/list/bitcoin/usd`)
-    // const data = await res.json()
-    // console.log(data)
-    let currency1API= "bitcoin,usd";
+    
+    let currency1API= "bitcoin,ethereum";
     let other='ethereum'
     let indexDate="01-01-2020";
-    //! let string = "https://api.coingecko.com/api/v3/coins/" + currency1API +'/simple/supported_vs_currencies/' + other;
-     let string = `https://api.coingecko.com/api/v3/simple/price?ids=${currency1API}&vs_currencies=usd`;
-    //  let string = `https://api.coingecko.com/api/v3/simple/price?ids=${currency1API}}&vs_currencies=${other}`;
-    //  let string = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd';
-    //! const string = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false";
-    //! const url = `https://api.coingecko.com/api/v3/simple/price?ids=${coinId}&vs_currencies=usd`;
-    //! const url = `https://api.coingecko.com/api/v3/simple/price?ids=${str}&vs_currencies=usd`;
-    //! var str = coinIds.Join(",");
-    // const string = `"https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"`;
-    // const string = `https://api.coingecko.com/api/v3/simple/price?ids=${currency1API}&vs_currencies=${other}`;
-    // let string = "https://api.coingecko.com/api/v3/coins/" + currency1API ;
-    // let string = "https://api.coingecko.com/api/v3/coins/" + currency1API +"/history?date="+indexDate+"&localization=false";
+    let coins=selectedCoin + ','+selectedCoinPair
+    console.log(coins)
+    let string = `https://api.coingecko.com/api/v3/simple/price?ids=${coins}&vs_currencies=usd`;
+  
    await fetch(string)
    
     .then(resp => resp.json())
-    .then(data => console.log(data))
+    .then(data =>{
+     
+      console.log(data)
+    })
     // .then(data => console.log(data.market_data.current_price.usd,data))
    
   };
@@ -72,6 +66,8 @@ const BorrowInput = () => {
     <Template title={title} para={para}  className='container-fluid md-container'>
       <section className='d-flex flex-column align-items-center border border-3 border-light-subtle px-2 py-3 rounded-4'>
         <section className='d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mb-3'>
+       
+        
           <CoinPairSelector
             amount={amount}
             handleCoinChange={handleCoinChange}
@@ -104,6 +100,25 @@ const BorrowInput = () => {
 export default BorrowInput;
 
 
+
+// const res =await fetch( `https://api.coingecko.com/api/v3/simple/price?ids=${selectedCoin.toLowerCase()}&vs_currencies=${selectedCoinPair.toLowerCase()}`)
+    // const res =await fetch(`https://api.coingecko.com/api/v3/coins/list/bitcoin/usd`)
+    // const data = await res.json()
+    // console.log(data)
+    // let currency1API= "litecoin";
+
+  // let string = "https://api.coingecko.com/api/v3/coins/" + currency1API +'/simple/supported_vs_currencies/' + other;
+    //  let string = `https://api.coingecko.com/api/v3/simple/price?ids=${currency1API}&vs_currencies=usd`;
+    //  let string = `https://api.coingecko.com/api/v3/simple/price?ids=${currency1API}}&vs_currencies=${other}`;
+    //  let string = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd';
+    //! const string = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false";
+    //! const url = `https://api.coingecko.com/api/v3/simple/price?ids=${coinId}&vs_currencies=usd`;
+    //! const url = `https://api.coingecko.com/api/v3/simple/price?ids=${str}&vs_currencies=usd`;
+    //! var str = coinIds.Join(",");
+    // const string = `"https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"`;
+    // const string = `https://api.coingecko.com/api/v3/simple/price?ids=${currency1API}&vs_currencies=${other}`;
+    // let string = "https://api.coingecko.com/api/v3/coins/" + currency1API ;
+    // let string = "https://api.coingecko.com/api/v3/coins/" + currency1API +"/history?date="+indexDate+"&localization=false";
 
 // import React, { useEffect, useState } from 'react';
 // import Axios from 'axios';
