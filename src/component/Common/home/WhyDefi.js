@@ -10,7 +10,7 @@ const WhyDefi = () => {
   return (
     <Template title={title} para={para} className='text-primary container-fluid' >
       <Card className='shadow-lg whyDefi rounded-4'>
-        <Row className='align-items-center'>
+        <Row className='align-items-center container-fluid'>
           <Col sm={12} md={4} className=' '>
             <section className='d-flex flex-row justify-content-center flex-md-column '>
               <img src={img1} className='whyDefiImage' alt='' />

@@ -13,7 +13,7 @@ const FooterAds = () => {
                   {
                      data.itemDetail.map((dat,index)=>(
                       <ul key={index}>
-                         <li>{dat.name}</li>
+                         <li className='fs-subbody'>{dat.name}</li>
                       </ul>
                      ))
                   }

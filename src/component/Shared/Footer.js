@@ -19,7 +19,7 @@ const Footer = () => {
           <Col xm={12} sm={6} md={4}>
           <div className="d-flex justify-content-center justify-content-md-end gap-4">
                        {footData.map((data, index) => (
-                         <a href={data.path} key={index}>
+                         <a href={data.path} key={index} >
                            {data.icon}
                          </a>
                        ))}

@@ -9,7 +9,7 @@ const Solution = () => {
     const {solutionData:{title}}=solutionData
     return (
         <Template title={title} className='text-primary'>
-           <Row>
+           <Row className='container-fluid'>
             <Col sm={12} md={6}>
               {
                 solutionDataCard.map((sol,index)=>(

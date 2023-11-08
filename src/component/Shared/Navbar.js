@@ -6,7 +6,7 @@ import { NavData } from '../data';
 function NavBar() {
   
   return (
-    <Navbar expand="md" className="bg">
+    <Navbar expand="md" className="bg fixed-top " style={{backdropFilter:'blur(5px)'}}>
       <Container fluid>
         <Navbar.Brand as={NavLink} to="/"><img src={require('./../asset/images/deficonnect _lo.svg').default} className='logo' alt=''/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

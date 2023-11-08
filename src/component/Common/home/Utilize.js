@@ -13,7 +13,7 @@ const Utilize = () => {
 
     return (
         <Template title={title} para={para} className='container'>
-          <Row className='justify-content-between gap-1'>
+          <Row className='justify-content-between gap-1 overflow-hidden'>
           <SliderContainer>
           {SliderData.map((data, index) => (
             <Col sm={12} md={3} key={index}>

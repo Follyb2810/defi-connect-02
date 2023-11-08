@@ -359,6 +359,11 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
     background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
     height: 350px;
   }
+  /* ! contact */
+  .contactContainer {
+    height: 70vh;
+    padding: 20px;
+  }
 }
 @media (max-width:480px) {
   .whyDefiImage{

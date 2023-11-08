@@ -11,7 +11,7 @@ const RoadMap = () => {
     return (
         <Template title={title} className='text-primary border border-2 border-light-subtle p-3'>
         <Button className='w-50 mx-auto'>CORE MISSION</Button>
-        <Row className='text-white mt-5 justify-content-between'>
+        <Row className='text-white mt-5 justify-content-between container-fluid'>
           {
             RoadDataMap.map((data,index)=>(
                 <Col xm={12} md={6} key={index}>

@@ -9,7 +9,7 @@ const GetToKnowUs = () => {
     console.log(getToknow)
     return (
         <Template title={title}>
-        <Row className='justify-content-between align-items-center gap-2 gap-md-0'>
+        <Row className='justify-content-between align-items-center gap-2 gap-md-0 container-fluid'>
             {
                 geToKnowData.map((data,index)=>(
                     <Col sm={12} md={4} key={index}>

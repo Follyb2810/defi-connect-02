@@ -19,20 +19,24 @@ function App() {
 //   const [ { BorrowInputData: { title } } ] = templatetHead;
 // const [{a}] =templatetHead
   return (
-   <section>
-     <Hero/>
-     <Borrow/>
-     <WhyDefi/>
-     <BorrowInput/>
-     <Utilize/>
-     <Solution/>
-     <GetToKnowUs/>
-    <Partner/>
-    <Faq/>
-    <RoadMap/>
-    <Contact/>
-   </section>
+   <>
+   <Hero/>
+   <Borrow/>
+   <WhyDefi/>
+   <BorrowInput/>
+   <Utilize/>
+   <Solution/>
+   <GetToKnowUs/>
+   <Partner/>
+   <Faq/>
+   <RoadMap/>
+   <Contact/>
+   
+   
+   </>
   );
 }
 
 export default App;
+
+

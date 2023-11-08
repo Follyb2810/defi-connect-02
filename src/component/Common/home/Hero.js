@@ -5,8 +5,10 @@ import {FaGreaterThan} from 'react-icons/fa'
 
 const Hero = () => {
     return (
-        <Row className='justify-content-between align-items-center'>
-            <Col xs={12} sm={7}>
+        <section className='container-fluid'>
+        
+        <Row className='justify-content-between align-items-center mt-5 pt-5'>
+            <Col sm={12} md={7} className=''>
                 <h2 className='fs-head'>Fastest & Secure
                 Platform to <b className='colorBlue me-2'>BORROW</b>
                 your crypto.</h2>
@@ -15,10 +17,11 @@ const Hero = () => {
                 and your credit line is immediately available.</p>
                 <ButtonComponent content={<span className='fw-bold'>BORROW NOW <FaGreaterThan/></span>}/>
             </Col>
-            <Col xs={12} sm={5}>
+            <Col sm={12} md={5}>
               <img src={require('./../../asset/images/hero.svg').default} className='hero'  alt=''/>
             </Col>
         </Row>
+        </section>
     )
 }
 
