@@ -262,7 +262,7 @@ const solutionDataCard =[
        },
        {
         img:require('./asset/images/simplified.svg').default,
-        cardHeader:'Convenience and Accessibility',
+        cardHeader:'Simplified Portfolio Diversification',
         cardBody:`The platform offers the ability to diversify investments and access
         a wide range of traditional and synthetic assets. This allows users 
        to manage their portfolios more effectively and distribute risk 

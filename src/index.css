@@ -28,6 +28,9 @@ a{
 a:hover{
   background-color: var(--fagbg);
 }
+.template{
+  margin: 150px 0;
+}
 .colorBlack{
   color: var(--colorBlack);
 }
