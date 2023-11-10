@@ -3,7 +3,7 @@ import { Button, Form } from 'react-bootstrap'
 
 const Contact = () => {
   return (
-    <section className='contactContainer'>
+    <section className='contactContainer' id='contact'>
       <section className='contactContent rounded-5 py-5'>
         <Form className='bg-white contactForm '>
           <h3 className='fw-bold text-center text-primary fs-subhead'>Contact Us</h3>

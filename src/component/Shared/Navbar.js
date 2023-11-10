@@ -12,21 +12,12 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-          {
-            NavData.map((nav,index)=>(
-              <Nav.Link
-              key={index}
-          as={NavLink}
-          to={nav.path}
-          style={({ isActive }) =>
-            isActive ? { color: "black" } : { color: "blue" }
-          }
-        >
-          {nav.name}
-        </Nav.Link>
-            ))
-          }
-        
+          
+            {
+              NavData.map((nav,index)=>(
+                <a href={nav.path} key={index} className='px-auto mx-auto mx-md-0 py-2 py-md-0 px-md-2'>{nav.name}</a>
+              ))
+            }
       
           </Nav>
         </Navbar.Collapse>
@@ -39,8 +30,16 @@ export default NavBar;
 
 
 // {
-//   checkConnect ?
-//   <WalletButton content='connect wallet' className='connect' click={DisconnectAccount} />
-//   :
-//   <WalletButton click={ConnectAccount} content=<span>{address.slice(0,10)} <FaWallet/></span> className='connect' />
+//   NavData.map((nav,index)=>(
+//     <Nav.Link
+//     key={index}
+// as={NavLink}
+// to={nav.path}
+// style={({ isActive }) =>
+//   isActive ? { color: "black" } : { color: "blue" }
+// }
+// >
+// <a href={nav.path} >{nav.name}</a>
+// </Nav.Link>
+//   ))
 // }

@@ -9,7 +9,7 @@ const WhyDefi = () => {
 
   return (
     <Template title={title} para={para} className='text-primary container-fluid' >
-      <Card className='shadow-lg whyDefi rounded-4'>
+      <Card className='shadow-lg whyDefi rounded-4 p-0' id='usecase'>
         <Row className='align-items-center container-fluid'>
           <Col sm={12} md={4} className=' '>
             <section className='d-flex flex-row justify-content-center flex-md-column '>
@@ -17,15 +17,15 @@ const WhyDefi = () => {
               <img src={img2} className='whyDefiImage' alt='' />
             </section>
           </Col>
-          <Col sm={12} md={8}>
+          <Col sm={12} md={8} className='container-fluid'>
             <Stack>
               {whyDefiContent.map((content, index) => (
-                <Stack direction='horizontal' className='text-start  border-bottom border-5 p-2' key={index}>
-                  <div className='w-50 text-wrap fs-title p-2'>{content.itemFirst}</div>
-                  <div className='w-25 text-center fs-subtitle p-2' style={{color:content.itemSecond==='Instant Crypto Credit Lines'?'blue':'green'}}>
+                <Stack direction='horizontal' className='text-start  border-bottom border-5 p-2 ' key={index}>
+                  <div className='item-first text-wrap fs-why'>{content.itemFirst}</div>
+                  <div className='item-second-last text-center fs-why ' style={{color:content.itemSecond==='Instant Crypto Credit Lines'?'blue':'green'}}>
                     {content.itemSecond}
                   </div>
-                  <div className='w-25 text-center p-2 fs-subtitle' style={{color:content.itemLast==='Conventional Loans'?'blue':''}}>{content.itemLast}</div>
+                  <div className='item-second-last text-center fs-why' style={{color:content.itemLast==='Conventional Loans'?'blue':''}}>{content.itemLast}</div>
                 </Stack>
               ))}
             </Stack>

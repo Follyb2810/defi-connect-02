@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
   margin: 0;
+  scroll-behavior: smooth;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
@@ -17,6 +18,15 @@
 }
 ::placeholder{
   color: white;
+}
+a{
+  text-decoration: none !important;
+  cursor: pointer;
+  /* background-color: #e0e0e0; */
+  transition: background-color 0.3s ease;
+}
+a:hover{
+  background-color: var(--fagbg);
 }
 .colorBlack{
   color: var(--colorBlack);
@@ -58,12 +68,12 @@
   font-family: Poppins;
   font-size: 14px;
 }
-
+/* ! stats */
 .stats{
   width: 50px;
   height: 50px;
 }
-
+/* ! heto */
 .hero{
   width: 100%;
   height: 300px;
@@ -78,12 +88,25 @@
   height: 300px;
   width: 300px;
 }
+.fs-why{
+  font-family: Poppins;
+  font-size: 20px;
+}
+.item-first{
+  width: 40%;
+}
+.item-second-last{
+  width: 30%;
+}
+.item-icon{
+  font-size:20px;
+}
 
 .custom-form {
   max-width: 300px; /* Set a maximum width for the form */
   margin: auto; /* Center the form on the page */
 }
-
+/* ! */
 input:focus{
   outline: none;
 }
@@ -115,10 +138,10 @@ input:focus{
   padding: 10px;
   text-align: center;
 } */
-
+/* ! road */
 .roadCard{
   background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
-  height: 300px;
+  height: 270px;
 }
 .roadCardTop{
   background: #062370;
@@ -250,6 +273,10 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
     width: 400px;
     font-size: 12px;
 }
+.roadCard{
+  background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
+  height: 300px;
+}
 }
 @media (max-width:992px) {
   .whyDefiImage{
@@ -271,9 +298,15 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   width: 370px;
   font-size: 12px;
 }
+/* !road */
 .roadCard{
   background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
-  height: 350px;
+  height: 370px;
+}
+/* !why */
+.fs-why{
+  font-family: Poppins;
+  font-size: 16px;
 }
 }
 @media (max-width:768px) {
@@ -294,16 +327,22 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 .getTokowCardHead{
   height: 50px;
 }
+/* ! road */
 .roadCardTop{
   width: 450px;
   font-size: 12px;
 }
 .roadCard{
   background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
-  height: 300px;
+  height: 280px;
 }
 .contactForm{
   width: 100%;
+}
+/* ! wht */
+.fs-why{
+  font-family: Poppins;
+  font-size: 16px;
 }
 }
 @media (max-width:576px) {
@@ -343,13 +382,14 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
     font-family: Poppins;
     font-size: 16px;
   }
+  
   .fs-body{
     font-family: Poppins;
     font-size: 14px;
   }
   .fs-subbody{
     font-family: Poppins;
-    font-size: 14px;
+    font-size: 12px;
   }
   
   .roadCardTop{
@@ -371,8 +411,18 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
     height: 70vh;
     padding: 20px;
   }
+  /* !why */
+  .fs-why{
+    font-family: Poppins;
+    font-size: 12px;
+  }
 }
 @media (max-width:480px) {
+  /* !road */
+  .roadCard{
+    background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
+    height: 400px;
+  }
   .whyDefiImage{
     height: 100px;
     width: 100px;
@@ -399,7 +449,7 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   }
   .fs-title{
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 20px;
   }
   .fs-subtitle{
     font-family: Poppins;
@@ -411,7 +461,12 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   }
   .fs-subbody{
     font-family: Poppins;
-    font-size: 14px;
+    font-size: 12px;
+  }
+  /* ! why */
+  .fs-why{
+    font-family: Poppins;
+    font-size: 10px;
   }
 }
 

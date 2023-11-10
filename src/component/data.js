@@ -27,27 +27,27 @@ const NavData=[
     {
         id:0,
         name:'Whitepaper',
-        path:'/'
+        path:'#whitepaper'
     },
     {
         id:0,
         name:'Usecases',
-        path:'/'
+        path:'#usecase'
     },
     {
         id:0,
         name:'Partner',
-        path:'/'
+        path:'#partner'
     },
     {
         id:0,
         name:'Road Map',
-        path:'/'
+        path:'#roadmap'
     },
     {
         id:0,
         name:'Contact',
-        path:'/'
+        path:'#contact'
     }
 ]
 
@@ -62,43 +62,43 @@ const whyDefiContent =[
  },
  {
     itemFirst:'Opportunity to grow your portfolio',
-    itemSecond:<AiFillCheckCircle />,
-    itemLast:<AiFillCloseCircle />
+    itemSecond:<AiFillCheckCircle  className='item-icon'/>,
+    itemLast:<AiFillCloseCircle className='item-icon'/>
  },
  {
     itemFirst:'Lower interest rates',
-    itemSecond:<AiFillCheckCircle/>,
-    itemLast:<AiFillCloseCircle/>
+    itemSecond:<AiFillCheckCircle className='item-icon'/>,
+    itemLast:<AiFillCloseCircle className='item-icon'/>
  },
  {
     itemFirst:'No origination fees',
-    itemSecond:<AiFillCheckCircle/>,
-    itemLast:<AiFillCloseCircle/>
+    itemSecond:<AiFillCheckCircle className='item-icon'/>,
+    itemLast:<AiFillCloseCircle className='item-icon'/>
  },
  {
     itemFirst:'Tax-efficiency',
-    itemSecond:<AiFillCheckCircle/>,
-    itemLast:<AiFillCloseCircle/>
+    itemSecond:<AiFillCheckCircle className='item-icon'/>,
+    itemLast:<AiFillCloseCircle className='item-icon'/>
  },
  {
     itemFirst:'Instant approval',
-    itemSecond:<AiFillCheckCircle/>,
-    itemLast:<AiFillCloseCircle/>
+    itemSecond:<AiFillCheckCircle className='item-icon'/>,
+    itemLast:<AiFillCloseCircle className='item-icon'/>
  },
  {
     itemFirst:'No paperwork to fill',
-    itemSecond:<AiFillCheckCircle/>,
-    itemLast:<AiFillCloseCircle/>
+    itemSecond:<AiFillCheckCircle className='item-icon'/>,
+    itemLast:<AiFillCloseCircle className='item-icon'/>
  },
  {
     itemFirst:'No monthly repayments',
-    itemSecond:<AiFillCheckCircle/>,
-    itemLast:<AiFillCloseCircle/>
+    itemSecond:<AiFillCheckCircle className='item-icon'/>,
+    itemLast:<AiFillCloseCircle className='item-icon'/>
  },
  {
     itemFirst:'No impact on credit score',
-    itemSecond:<AiFillCheckCircle/>,
-    itemLast:<AiFillCloseCircle/>
+    itemSecond:<AiFillCheckCircle className='item-icon'/>,
+    itemLast:<AiFillCloseCircle className='item-icon'/>
  }
 ]
 

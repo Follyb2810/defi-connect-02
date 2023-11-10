@@ -12,7 +12,7 @@ const Partner = () => {
     console.log(title)
     return (
         <Template title={title}>
-         <Row className='justify-content-between container-fluid'>
+         <Row className='justify-content-between container-fluid' id='partner'>
           <Col sm={12} md={5} className='text-start'>
             <h6 className='fs-head fw-bolder' >{PartnerContent.subtitle}</h6>
             <p className='h-25 mt-3 fs-subbody'>{PartnerContent.body}</p>

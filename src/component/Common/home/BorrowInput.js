@@ -14,6 +14,7 @@ const BorrowInput = () => {
   const [selectedCoinPair, setSelectedCoinPair] = useState('');
   const [conversionRate, setConversionRate] = useState(null);
   // const [order, setOrder] = useState([]);
+  
 
 
   const BorrowInpuData = templatetHead[6];
@@ -56,6 +57,11 @@ const BorrowInput = () => {
     .then(data =>{
      
       console.log(data)
+      console.log(data[selectedCoinPair].usd)
+      console.log(data[selectedCoin].usd)
+      
+      setAmount(data[selectedCoin].usd)
+      setAmountPair(data[selectedCoinPair].usd)
     })
     // .then(data => console.log(data.market_data.current_price.usd,data))
    
