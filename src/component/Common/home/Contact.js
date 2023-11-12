@@ -4,8 +4,8 @@ import { Button, Form } from 'react-bootstrap'
 const Contact = () => {
   return (
     <section className='contactContainer' id='contact'>
-      <section className='contactContent rounded-5 py-5'>
-        <Form className='bg-white contactForm '>
+      <section className='contactContent rounded-5 p-2 p-md-5 w-100 '>
+        <Form className='bg-white contactForm'>
           <h3 className='fw-bold text-center text-primary fs-subhead'>Contact Us</h3>
            <input type='text' className='black-input mt-3' placeholder='Enter your Name'/>
            <input type='text' className='black-input mt-3' placeholder='Valid Email Address'/>

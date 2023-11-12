@@ -166,23 +166,16 @@ input:focus{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
-  padding: 40px;
+  padding: 30px;
 }
 
 .contactContent {
   background-color: #f9f9f9;
-  width: 100%;
-  height: 100%;
-  padding-inline: 20%;
-  /* display: flex; */
+   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
   
   
-}
-.contactForm{
-
 }
 .form-control{
   background: #9A9DA4;
@@ -199,6 +192,8 @@ input:focus{
   width: 100%;
   display: block;
   padding: 10px;
+  outline: none;
+  border: none;
 
 }
 .black-input::placeholder {
@@ -339,9 +334,7 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
   height: 280px;
 }
-.contactForm{
-  width: 100%;
-}
+
 /* ! wht */
 .fs-why{
   font-family: Poppins;
