@@ -32,7 +32,7 @@ const Footer = () => {
      </Stack>
      <Stack>
        <p>
-       All or part of the Nexo Services, some features thereof, or some Digital Assets, are not available in certain jurisdictions, including where 
+       All or part of the Defi Connect Services, some features thereof, or some Digital Assets, are not available in certain jurisdictions, including where 
        restrictions or limitations may apply, as indicated on the Defi connect Platform and in the relevant general terms and conditions.
        </p>
        <p>

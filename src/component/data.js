@@ -130,7 +130,7 @@ const templatetHead =[
                         UtilizeContent :{
                             index:2,
                             title:`How to Best Utilize Your Credit Line`,
-                            para:`With a minimum of $50 and a maximum of $2M, Nexo is here to help you afford the necessities and luxuries you are thinking about.`
+                            para:`With a minimum of $50 and a maximum of $2M,Defi Connect is here to help you afford the necessities and luxuries you are thinking about.`
                         }
                         
                     },
@@ -176,11 +176,112 @@ const templatetHead =[
                         
                         partnerData:{
                             index:8,
-                            title:'PARTNER WITH DEFICONNECT NOW',
+                            title:'Partners',
+                            partnersImg:[
+                                {
+                                    id:1,
+                                    imgUrl:require('./asset/images/binance.svg').default
+                                },
+                                {
+                                    id:2,
+                                    imgUrl:require('./asset/images/gate.svg').default,
+
+                                },
+                                {
+                                    id:3,
+                                    imgUrl:require('./asset/images/coinmarket.svg').default
+                                },
+                                {
+                                    id:4,
+                                    // imgUrl:require('./asset/images/coingecko.svg').default
+                                    imgUrl:require('./asset/images/chainlink.svg').default,
+                                    
+                                },
+                                {
+                                    id:5,
+                                    imgUrl:require('./asset/images/sgr.svg').default
+                                },
+                                
+                                {
+                                    id:6,
+                                    imgUrl:require('./asset/images/naireg.svg').default
+                                },
+                                
+                                {
+                                    id:7,
+                                    imgUrl:require('./asset/images/harmony.svg').default
+                                },
+                        
+                                {
+                                    id:8,
+                                    imgUrl:require('./asset/images/247.svg').default
+                                },
+                                {
+                                    id:9,
+                                    imgUrl:require('./asset/images/coingecko.svg').default
+                                },
+                                {
+                                    id:10,
+                                    imgUrl:require('./asset/images/polygn.svg').default
+                                },
+                                {
+                                    id:11,
+                                    imgUrl:require('./asset/images/taker.svg').default
+                                },
+                                {
+                                    id:12,
+                                    imgUrl:require('./asset/images/mars.svg').default
+                                },
+                            ]
+                        }
+                    },
+                    {
+                        
+                        TeamData:{
+                            index:9,
+                            title:'Team',
+                            teamDetails:[
+                                {
+                                    id:1,
+                                    teamImg:require('./asset/images/teamImg.svg').default,
+                                    teamName:'Allen avenue',
+                                    teamTitle:['rook','king','queen','bishop','pawn',]
+                                },
+                                {
+                                    id:2,
+                                    teamImg:require('./asset/images/teamImg.svg').default,
+                                    teamName:'Allen avenue',
+                                    teamTitle:['rook','king','queen','bishop','pawn',]
+                                },
+                                {
+                                    id:3,
+                                    teamImg:require('./asset/images/teamImg.svg').default,
+                                    teamName:'Allen avenue',
+                                    teamTitle:['rook','king','queen','bishop','pawn',]
+                                },
+                                {
+                                    id:4,
+                                    teamImg:require('./asset/images/teamImg.svg').default,
+                                    teamName:'Allen avenue',
+                                    teamTitle:['rook','king','queen','bishop','pawn',]
+                                },
+                                {
+                                    id:5,
+                                    teamImg:require('./asset/images/teamImg.svg').default,
+                                    teamName:'Allen avenue',
+                                    teamTitle:['rook','king','queen','bishop','pawn',]
+                                },
+                                {
+                                    id:6,
+                                    teamImg:require('./asset/images/teamImg.svg').default,
+                                    teamName:'Allen avenue',
+                                    teamTitle:['rook','king','queen','bishop','pawn',]
+                                },
+                            ]
                             
                         
                         }
-                    },
+                    }
 
                 ]
 
@@ -211,32 +312,32 @@ const FagData = [
     {
             id:0,
             ques:"How do DEFI CONNECT works?",
-            ans:'helo'
+            ans:`DeFi Connect operates as a decentralized finance (DeFi) platform that tokenizes traditional assets, allowing users to invest in a variety of assets without direct ownership. It employs smart contracts for the creation of synthetic tokens, backed by collateral. Users can deposit crypto assets as collateral to access a credit line, trade synthetic tokens, and participate in decentralized investment funds.`
     },
     {
             id:1,
             ques:"How quickly do i get money?",
-            ans:'helo'
+            ans:`Upon approval, users can access their credit line almost instantly. The funds are typically available within 24 hours, providing a quick and efficient borrowing experience.`
     },
     {
             id:2,
             ques:"What is the interest rate?",
-            ans:'helo'
+            ans:`The interest rate varies based on the user's Loyalty Tier, determined by the ratio of the native token (or other specified criteria) against the total portfolio balance. Users with higher Loyalty Tiers enjoy lower interest rates, ranging from 7.9% to 15.9%.`
     },
     {
             id:3,
-            ques:"What is the loan-to-value?",
-            ans:'helo'
+            ques:"What is the loan-to-value (LTV)?",
+            ans:`The Loan-to-Value (LTV) ratio expresses the proportion of the loan amount to the value of the collateral. It is calculated by dividing the loan amount by the collateral value and expressing the result as a percentage. LTV is a key factor in determining the user's risk and eligibility for borrowing.`
     },
     {
             id:4,
             ques:`What is the value of my collateral changes before i repay my credit line?`,
-            ans:'helo'
+            ans:`If the value of the collateral changes, it may impact the user's Loan-to-Value ratio. To manage this, users can add more collateral, repay a portion of the credit line, or take other actions to maintain a healthy LTV ratio.`
     },
     {
             id:5,
             ques:`How does DEFI CONNECT keep my collateral safe?`,
-            ans:'helo'
+            ans:`DEFI CONNECT employs advanced security measures, including cold wallets for storing crypto assets, multi-signature protocols, and regular security audits. These measures are designed to protect user collateral from potential vulnerabilities and ensure a secure platform for users.`
     }
     
 ]
@@ -402,22 +503,6 @@ const footerContent = [
             {
                 name: 'Borrow',
                 path: ''
-            },
-            {
-                name: 'Booster',
-                path: ''
-            },
-            {
-                name: 'Defi Pro',
-                path: ''
-            },
-            {
-                name: 'Referral',
-                path: ''
-            },
-            {
-                name: 'Defi wallet',
-                path: ''
             }         
         ]
     },
@@ -427,35 +512,7 @@ const footerContent = [
             {
                 name: 'About',
                 path: ''
-            },
-            {
-                name: 'Security',
-                path: ''
-            },
-            {
-                name: 'Licenses',
-                path: ''
-            },
-            {
-                name: 'Defi Private',
-                path: ''
-            },
-            {
-                name: 'Defi Ventures',
-                path: ''
-            },
-            {
-                name: 'Defi Pro',
-                path: ''
-            },
-            {
-                name: 'Corporates',
-                path: ''
-            },
-            {
-                name: 'Affiliates wallet',
-                path: ''
-            },                  
+            },                
             {
                 name: 'Careers',
                 path: ''
@@ -467,26 +524,6 @@ const footerContent = [
         itemDetail: [
             {
                 name: 'Blog',
-                path: ''
-            },
-            {
-                name: 'Media Center',
-                path: ''
-            },
-            {
-                name: 'Help Center',
-                path: ''
-            },
-            {
-                name: 'Contacts',
-                path: ''
-            },
-            {
-                name: 'Sitemap',
-                path: ''
-            },
-            {
-                name: 'Vulnerability Disclosure',
                 path: ''
             }        
         ]
@@ -501,43 +538,7 @@ const footerContent = [
             {
                 name: 'Terms & Conditions',
                 path: ''
-            },
-            {
-                name: 'Services Terms',
-                path: ''
-            },
-            {
-                name: 'Borrow Terms',
-                path: ''
-            },
-            {
-                name: 'Earn Terms',
-                path: ''
-            },
-            {
-                name: 'Exchange Terms',
-                path: ''
-            },
-            {
-                name: 'DeFi Terms',
-                path: ''
-            },        
-            {
-                name: 'Staking Terms',
-                path: ''
-            },        
-            {
-                name: 'Defi Card Terms',
-                path: ''
-            },        
-            {
-                name: 'Affiliate Terms',
-                path: ''
-            },        
-            {
-                name: 'Cookies Policy',
-                path: ''
-            },        
+            }       
         ]
     }
 ];

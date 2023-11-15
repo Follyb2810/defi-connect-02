@@ -7,7 +7,7 @@ const Fags = () => {
      <section className='text-primary fagBg rounded-3 py-5 d-flex flex-column justify-content-center'>
      <h3 className='subhead text-center py-3'>FAQs</h3>
      <section className='d-flex justify-content-center align-items-center pb-5'>
-      <div className="accordion accordion-flush" id="accordionFlushExample" style={{backgroundColor:'#EBEDF3'}}>
+      <div className="accordion accordion-flush fagQuest" id="accordionFlushExample" style={{backgroundColor:'#EBEDF3'}}>
         {FagData.map((question, index) => (
           <div className="accordion-item " key={index} style={{backgroundColor:'#EBEDF3'}}>
             <h2 className="accordion-header py-3" style={{backgroundColor:'#EBEDF3'}}  >

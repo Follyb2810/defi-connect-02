@@ -1,7 +1,7 @@
 import React from 'react'
-import { Col, Row } from 'react-bootstrap'
-import ButtonComponent from './../../Shared/ButtonComponent'
+import { Button, Col, Row } from 'react-bootstrap'
 import {FaGreaterThan} from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
     return (
@@ -15,7 +15,12 @@ const Hero = () => {
                 <p className='fs-subhead fw-light'>Borrow without selling your crypto with rates 
                 as low as 0% and no extra fees. Just top up 
                 and your credit line is immediately available.</p>
-                <ButtonComponent content={<span className='fw-bold'>BORROW NOW <FaGreaterThan/></span>}/>
+                <Button>
+                <Link to='/borrow'>
+                <span className='fw-bold text-white'>BORROW NOW <FaGreaterThan/></span>
+                </Link>
+                </Button>
+                
             </Col>
             <Col sm={12} md={5}>
               <img src={require('./../../asset/images/hero.svg').default} className='hero'  alt=''/>

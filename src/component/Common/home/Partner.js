@@ -8,32 +8,19 @@ import Img1 from './../../asset/images/partner.jpg'
 
 const Partner = () => {
     const partner = templatetHead[8]
-    const {title} = partner.partnerData
+    const {title,partnersImg} = partner.partnerData
     console.log(title)
     return (
         <Template title={title}>
-         <Row className='justify-content-between container-fluid' id='partner'>
-          <Col sm={12} md={5} className='text-start'>
-            <h6 className='fs-head fw-bolder' >{PartnerContent.subtitle}</h6>
-            <p className='h-25 mt-3 fs-subbody'>{PartnerContent.body}</p>
-            <Button className='mt-4 mt-md-0'> Partnership</Button>
-          </Col>
-          <Col sm={12} md={7} className='mt-4 mt-md-0'>
-            <Row className='g-2'>
-             <Col xs={3} sm={3} md={6}>
-              <img src={Img1} alt='' className='partner'/>
-             </Col>
-             <Col xs={3} sm={3} md={6}>
-              <img src={Img1} alt='' className='partner'/>
-             </Col>
-             <Col xs={3} sm={3} md={6}>
-              <img src={Img} alt='' className='partner'/>
-             </Col>
-             <Col xs={3} sm={3} md={6}>
-              <img src={Img} alt='' className='partner'/>
-             </Col>
-            </Row>
-          </Col>
+        
+         <Row className='justify-content-between g-2 container-fluid' id='partner'>
+           {
+            partnersImg.map((data,index)=>(
+              <Col xs={6} sm={4} md={3}>
+               <img src={data.imgUrl} alt={data.id} className='partnerImg'/>
+           </Col>
+            ))
+           }
          </Row>
             
         </Template>

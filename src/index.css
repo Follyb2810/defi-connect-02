@@ -114,12 +114,12 @@ input:focus{
   outline: none;
 }
 .getTokowCard{
-  height: 220px;
+  height: 200px;
   background: #EBEDF3;
 
 }
 .getTokowCard p{
-  height: 90px;
+  height: 110px;
 }
 .getTokowCardHead{
   height: 50px;
@@ -182,6 +182,9 @@ input:focus{
 
 }
 /* ! partner */
+.partnerImg{
+  width: 250px;
+}
 .partner{
   height:200px;
   width: 100%;
@@ -264,8 +267,11 @@ input:focus{
 /* $accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>"); */
 
-/* Add any other custom styles you want here */
 
+/* !faq */
+.fagQuest{
+  width: 50%;
+}
 @media (max-width:1200px) {
   .roadCardTop{
     width: 400px;
@@ -275,6 +281,10 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
   height: 300px;
 }
+/* !patrtner */
+.partnerImg{
+  width:200px;
+}
 }
 @media (max-width:992px) {
   .whyDefiImage{
@@ -282,7 +292,7 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
     width: 200px;
   }
   .getTokowCard{
-  height: 250px;
+  height: 220px;
   background: #EBEDF3;
 
 }
@@ -306,6 +316,15 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   font-family: Poppins;
   font-size: 16px;
 }
+/* !partner */
+.partnerImg{
+  width:150px;
+}
+
+/* !faq */
+.fagQuest{
+  width: 80%;
+}
 }
 @media (max-width:768px) {
   /* !contact */
@@ -315,7 +334,7 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
     width: 200px;
   }
   .getTokowCard{
-  height: 180px;
+  height: 160px;
   background: #EBEDF3;
 
 }
@@ -352,7 +371,7 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
     width: 200px;
   }
   .getTokowCard{
-    height: 200px;
+    height: 170px;
     background: #EBEDF3;
   
   }
@@ -412,6 +431,10 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
     font-family: Poppins;
     font-size: 12px;
   }
+  /* !partner */
+  .partnerImg{
+    width:100%;
+  }
 }
 @media (max-width:480px) {
   /* !road */
@@ -423,14 +446,14 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
     height: 100px;
     width: 100px;
   }
-  
+/*   
   .getTokowCard{
     height: 240px;
     background: #EBEDF3;
   
-  }
+  } */
   .getTokowCard p{
-    height: 90px;
+    height: 120px;
   }
   .getTokowCardHead{
     height: 50px;
