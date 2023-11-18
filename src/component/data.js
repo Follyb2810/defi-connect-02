@@ -30,22 +30,22 @@ const NavData=[
         path:'#whitepaper'
     },
     {
-        id:0,
+        id:1,
         name:'Usecases',
         path:'#usecase'
     },
     {
-        id:0,
+        id:2,
         name:'Partner',
         path:'#partner'
     },
     {
-        id:0,
+        id:3,
         name:'Road Map',
         path:'#roadmap'
     },
     {
-        id:0,
+        id:4,
         name:'Contact',
         path:'#contact'
     }

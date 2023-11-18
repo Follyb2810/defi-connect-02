@@ -20,7 +20,7 @@ const Team = () => {
                         <div className='mt-3'>
                             {
                                data.teamTitle.map((data,index)=>(
-                                <p className='p-0 m-1'>{data}</p>
+                                <p className='p-0 m-1' key={index}>{data}</p>
                                )) 
                             }
                         </div>
