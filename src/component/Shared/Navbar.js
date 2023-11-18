@@ -1,26 +1,36 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { NavData } from '../data';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import whitePaper from './../asset/docs/Whitepaper_DeFi_Connect.docx';
 
 function NavBar() {
   const [navColor, setNavColor] = useState('');
-  // const notify = () => toast("Wow so easy!");
-  const notify = (message) => toast(message);
+  const [downloadConfirmed, setDownloadConfirmed] = useState(false);
 
-  const changeColor = (e, id) => {
+  const changeColor = async (e, id) => {
     setNavColor(id.id);
     if (id.name === 'Whitepaper') {
       let userConfirmation = window.confirm('You are about to download the Whitepaper. Do you want to proceed?');
-      if (!userConfirmation) {
+      if (userConfirmation) {
+        setDownloadConfirmed(true);
+      } else {
         e.preventDefault();
+        setDownloadConfirmed(false);
       }
-      notify('You have download the Whitepaper.');
     }
   };
+  
+
+  useEffect(() => {
+    if (downloadConfirmed) {
+      notify('You have downloaded the Whitepaper.');
+    }
+  }, [downloadConfirmed]);
+
+  const notify = (message) => toast(message);
 
   return (
     <Navbar expand="md" className="bg fixed-top " style={{ backdropFilter: 'blur(5px)' }}>
@@ -31,11 +41,11 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-          <ToastContainer />
+            <ToastContainer />
             {NavData.map((nav, index) => (
               <a
-                href={nav.path}
-                download={nav.name === 'Whitepaper' ? 'pdg.com' : false}
+                href={nav.name === 'Whitepaper' ? whitePaper: nav.path}
+                download={nav.name === 'Whitepaper' ? true : false}
                 key={nav.name + index}
                 onClick={(e) => changeColor(e, nav)}
                 style={{ color: navColor === index ? 'red' : 'blue' }}
@@ -51,6 +61,9 @@ function NavBar() {
 }
 
 export default NavBar;
+
+
+
 
 
 

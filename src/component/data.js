@@ -1,5 +1,6 @@
 import {FaGithub,FaTelegram,FaDiscord,FaTwitter} from 'react-icons/fa'
 import {AiFillCheckCircle,AiFillCloseCircle} from 'react-icons/ai'
+import file from './asset/docs/Whitepaper_DeFi_Connect.docx'
 const footData =[
     {
         social:'Github',
@@ -27,7 +28,8 @@ const NavData=[
     {
         id:0,
         name:'Whitepaper',
-        path:'#whitepaper'
+        path:'#whitepaper',
+        file:file
     },
     {
         id:1,
