@@ -9,7 +9,7 @@ const Team = () => {
     const {title,teamDetails} = partner.TeamData
     return (
         <Template title={title} className='fagBg px-0 px-md-3 py-4'>
-        <Row className='px-1 px-md-5'>
+        <Row className='px-1 px-md-5 container-fluid'>
           {
             teamDetails.map((data,index)=>(
                 <Col xs={12} sm={6} md={4} key={index} className='g-3'>
