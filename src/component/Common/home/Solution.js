@@ -3,6 +3,7 @@ import Template from '../../Shared/Template'
 import { solutionDataCard, templatetHead } from '../../data'
 import { Button, Card, Col, Row } from 'react-bootstrap'
 import { FaGreaterThan } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const Solution = () => {
     const solutionData = templatetHead[3]
@@ -28,7 +29,11 @@ const Solution = () => {
             <Col sm={12} md={6}>
                <img src={require('./../../asset/images/sol.svg').default} alt='' className='img-fluid'/>
             </Col>
-            <Button className='w-25 mx-auto p-2'>Get Started</Button>
+            <Button className='w-25 mx-auto p-2'>
+              <Link to='/borrow' className='text-white'>
+              Get Started
+              </Link>
+              </Button>
            </Row> 
         </Template>
     )

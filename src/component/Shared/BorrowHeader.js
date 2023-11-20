@@ -1,5 +1,6 @@
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import { BorrowHeaderContent } from '../data';
 
 
 
@@ -12,16 +13,20 @@ function BorrowHeader() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-          <Nav.Link
+          {
+            BorrowHeaderContent.map((data,index)=>(
+              <Nav.Link key={index}
           as={NavLink}
-          to='/'
+          to={data.path}
           style={({ isActive }) =>
             isActive ? { color: "black" } : { color: "blue" }
           }
           >
-          home
+          {data.name}
           </Nav.Link>
-      
+            ))
+          }
+          <Button className='ms-2'>Connect Button</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

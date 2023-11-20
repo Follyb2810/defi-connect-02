@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, Col, Form, InputGroup, Row, Stack } from 'react-bootstrap';
-import { footData, footerContent } from '../data';
+import { Col,Row, Stack } from 'react-bootstrap';
+import { footData} from '../data';
 
 import FooterAds from './FooterAds';
 import FooterEmail from './FooterEmail';
@@ -36,7 +36,7 @@ const Footer = () => {
        restrictions or limitations may apply, as indicated on the Defi connect Platform and in the relevant general terms and conditions.
        </p>
        <p>
-       Copyright 2023 Deficoonect. All rights reserved.
+       Copyright 2023 Defi Connect. All rights reserved.
        </p>
      </Stack>
       

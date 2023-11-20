@@ -1,6 +1,7 @@
 import {FaGithub,FaTelegram,FaDiscord,FaTwitter} from 'react-icons/fa'
 import {AiFillCheckCircle,AiFillCloseCircle} from 'react-icons/ai'
 import file from './asset/docs/Whitepaper_DeFi_Connect.docx'
+import {TeamA,TeamB,TeamC} from './asset/images/Images'
 const footData =[
     {
         social:'Github',
@@ -53,6 +54,23 @@ const NavData=[
     }
 ]
 
+const BorrowHeaderContent=[
+    {
+        id:0,
+        name:'Market',
+        path:'/borrow'
+    },
+    {
+        id:0,
+        name:'Loan',
+        path:'/loan'
+    },
+    {
+        id:0,
+        name:'Saving',
+        path:'/saving'
+    },
+]
 
 
 
@@ -245,40 +263,22 @@ const templatetHead =[
                             teamDetails:[
                                 {
                                     id:1,
-                                    teamImg:require('./asset/images/teamImg.svg').default,
-                                    teamName:'Allen avenue',
-                                    teamTitle:['rook','king','queen','bishop','pawn',]
+                                    teamImg:TeamA,
+                                    teamName:'Fedrico Rodriquez',
+                                    teamTitle:['CEO']
                                 },
                                 {
                                     id:2,
-                                    teamImg:require('./asset/images/teamImg.svg').default,
-                                    teamName:'Allen avenue',
-                                    teamTitle:['rook','king','queen','bishop','pawn',]
+                                    teamImg:TeamB,
+                                    teamName:'James Samuel',
+                                    teamTitle:['CTO']
                                 },
                                 {
                                     id:3,
-                                    teamImg:require('./asset/images/teamImg.svg').default,
-                                    teamName:'Allen avenue',
-                                    teamTitle:['rook','king','queen','bishop','pawn',]
-                                },
-                                {
-                                    id:4,
-                                    teamImg:require('./asset/images/teamImg.svg').default,
-                                    teamName:'Allen avenue',
-                                    teamTitle:['rook','king','queen','bishop','pawn',]
-                                },
-                                {
-                                    id:5,
-                                    teamImg:require('./asset/images/teamImg.svg').default,
-                                    teamName:'Allen avenue',
-                                    teamTitle:['rook','king','queen','bishop','pawn',]
-                                },
-                                {
-                                    id:6,
-                                    teamImg:require('./asset/images/teamImg.svg').default,
-                                    teamName:'Allen avenue',
-                                    teamTitle:['rook','king','queen','bishop','pawn',]
-                                },
+                                    teamImg:TeamC,
+                                    teamName:'Gabriel Adams',
+                                    teamTitle:['HOF',]
+                                }
                             ]
                             
                         
@@ -546,4 +546,4 @@ const footerContent = [
 ];
 
          
-export  {footData,NavData,templatetHead,geToKnowData,whyDefiContent,SliderData,FagData,InterestData,footerContent,solutionDataCard,PartnerContent,RoadDataMap}
+export  {footData,NavData,templatetHead,geToKnowData,whyDefiContent,SliderData,FagData,InterestData,footerContent,solutionDataCard,PartnerContent,RoadDataMap,BorrowHeaderContent}

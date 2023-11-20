@@ -9,13 +9,17 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import Layout from './component/Shared/Layout';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import BorrowPage from './component/pages/BorrowPage';
+import MarketPage from './component/pages/MarketPage';
+import LoanPage from './component/pages/LoanPage';
+import SavingPage from './component/pages/SavingPage';
 
 
  const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout/>}>
     <Route path='' element={<App/>}/>
-    <Route path='/borrow' element={<BorrowPage/>}/>
+    <Route path='/borrow/' element={<MarketPage/>}/>
+    <Route path='/loan' element={<LoanPage/>}/>
+    <Route path='/saving' element={<SavingPage/>}/>
   </Route>
  ))
 const root = ReactDOM.createRoot(document.getElementById('root'));

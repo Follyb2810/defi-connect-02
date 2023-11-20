@@ -272,6 +272,11 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 .fagQuest{
   width: 50%;
 }
+/* ! team */
+.teamImg{
+  width: 150px;
+  height:150px;
+}
 @media (max-width:1200px) {
   .roadCardTop{
     width: 400px;

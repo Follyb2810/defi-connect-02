@@ -6,6 +6,7 @@ import CoinPairSelector from '../../Shared/CoinPairSelector';
 import { BsArrowLeftRight } from 'react-icons/bs';
 import { FaGreaterThan } from 'react-icons/fa';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const BorrowInput = () => {
   const [amount, setAmount] = useState('');
@@ -89,7 +90,9 @@ const BorrowInput = () => {
           />
         </section>
         <Button className='fw-bold w-50 w-md-25 text-center' onClick={handleSubmit}>
-          BORROW NOW <FaGreaterThan/>
+         <Link to='/borrow' className='text-white'>
+            BORROW NOW <FaGreaterThan/>
+         </Link> 
         </Button>
         <div className="mt-3">
           {conversionRate && (
