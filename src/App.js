@@ -14,8 +14,6 @@ import Team from './component/Common/home/Team';
 
 
 function App() {
-//   const [ { BorrowInputData: { title } } ] = templatetHead;
-// const [{a}] =templatetHead
   return (
    <>
    <Hero/>
