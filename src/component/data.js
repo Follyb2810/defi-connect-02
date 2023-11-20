@@ -1,7 +1,7 @@
 import {FaGithub,FaTelegram,FaDiscord,FaTwitter} from 'react-icons/fa'
 import {AiFillCheckCircle,AiFillCloseCircle} from 'react-icons/ai'
 import file from './asset/docs/Whitepaper_DeFi_Connect.docx'
-import {TeamA,TeamB,TeamC} from './asset/images/Images'
+import {sendTeamA,sendTeamB,sendTeamC} from './asset/images/Images'
 const footData =[
     {
         social:'Github',
@@ -263,19 +263,19 @@ const templatetHead =[
                             teamDetails:[
                                 {
                                     id:1,
-                                    teamImg:TeamA,
+                                    teamImg:sendTeamA,
                                     teamName:'Fedrico Rodriquez',
                                     teamTitle:['CEO']
                                 },
                                 {
                                     id:2,
-                                    teamImg:TeamB,
+                                    teamImg:sendTeamB,
                                     teamName:'James Samuel',
                                     teamTitle:['CTO']
                                 },
                                 {
                                     id:3,
-                                    teamImg:TeamC,
+                                    teamImg:sendTeamC,
                                     teamName:'Gabriel Adams',
                                     teamTitle:['HOF',]
                                 }
