@@ -277,6 +277,10 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   width: 150px;
   height:150px;
 }
+.teamCard{
+  height: 420px !important;
+  width: 100% !important;
+}
 @media (max-width:1200px) {
   .roadCardTop{
     width: 400px;
@@ -289,6 +293,11 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 /* !patrtner */
 .partnerImg{
   width:200px;
+}
+/* ! team */
+.teamCard{
+  height: 450px !important;
+  width: 100% !important;
 }
 }
 @media (max-width:992px) {
@@ -330,6 +339,11 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 .fagQuest{
   width: 80%;
 }
+/* ! team */
+.teamCard{
+  height: 550px !important;
+  width: 100% !important;
+}
 }
 @media (max-width:768px) {
   /* !contact */
@@ -363,6 +377,11 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 .fs-why{
   font-family: Poppins;
   font-size: 16px;
+}
+/* ! team */
+.teamCard{
+  height: 450px !important;
+  width: 100% !important;
 }
 }
 @media (max-width:576px) {
@@ -440,6 +459,11 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   .partnerImg{
     width:100%;
   }
+  /* ! team */
+.teamCard{
+  height: 350px !important;
+  width: 100% !important;
+}
 }
 @media (max-width:480px) {
   /* !road */
@@ -492,6 +516,11 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
     font-family: Poppins;
     font-size: 10px;
   }
+  /* ! team */
+.teamCard{
+  height: 400px !important;
+  width: 100% !important;
+}
 }
 
 

@@ -265,19 +265,22 @@ const templatetHead =[
                                     id:1,
                                     teamImg:sendTeamA,
                                     teamName:'Fedrico Rodriquez',
-                                    teamTitle:['CEO']
+                                    teamTitle:'CEO',
+                                    teamDescription:`Federico has over a decade of experience in financial technology, having previously led successful blockchain projects. He brings a strategic vision for merging traditional finance with decentralized technologies.`
                                 },
                                 {
                                     id:2,
                                     teamImg:sendTeamB,
                                     teamName:'James Samuel',
-                                    teamTitle:['CTO']
+                                    teamTitle:'CTO',
+                                    teamDescription:`James is a seasoned blockchain developer, specializing in smart contract development. With a strong background in computer science, he oversees the technical aspects of the project.`
                                 },
                                 {
                                     id:3,
                                     teamImg:sendTeamC,
                                     teamName:'Gabriel Adams',
-                                    teamTitle:['HOF',]
+                                    teamTitle:'HOF',
+                                    teamDescription:`Gaberiel is a certified financial analyst with extensive experience in traditional investment markets. He ensures the alignment of the project with regulatory standards and brings a wealth of financial expertise`
                                 }
                             ]
                             
