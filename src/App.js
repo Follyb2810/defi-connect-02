@@ -11,26 +11,48 @@ import GetToKnowUs from './component/Common/home/GetToKnowUs';
 import Partner from './component/Common/home/Partner';
 import Contact from './component/Common/home/Contact';
 import Team from './component/Common/home/Team';
+import { LightSpeed, Slide, Zoom } from 'react-reveal';
 
 
 function App() {
   return (
-   <>
+   <div className='overflow-hidden'>
+   <Slide bottom>
    <Hero/>
-   <Borrow/>
-   <WhyDefi/>
-   <BorrowInput/>
-   <Utilize/>
-   <Solution/>
-   <GetToKnowUs/>
-   <Partner/>
-   <Team/>
-   <Faq/>
-   <RoadMap/>
+  </Slide>
+  <Slide right>
+  <Borrow/>
+</Slide>
+<Slide bottom>
+<WhyDefi/>
+</Slide>
+<Slide left>
+<BorrowInput/>
+</Slide>
+<LightSpeed right>
+        </LightSpeed>
+        <LightSpeed left>
+
+          <Solution/>
+        </LightSpeed>
+        <Zoom>
+        <Utilize/>
+
+        <GetToKnowUs/>
+      </Zoom>
+       <Zoom>
+       <Partner/>
+       <Team/>
+    </Zoom>
+    <Slide bottom>
+
+    <Faq/>
+    <RoadMap/>
+  </Slide>
    <Contact/>
    
    
-   </>
+   </div>
   );
 }
 
