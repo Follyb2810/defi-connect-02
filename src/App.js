@@ -11,33 +11,42 @@ import GetToKnowUs from './component/Common/home/GetToKnowUs';
 import Partner from './component/Common/home/Partner';
 import Contact from './component/Common/home/Contact';
 import Team from './component/Common/home/Team';
+import {Zoom, Fade, Hinge, Slide } from 'react-awesome-reveal';
+
+
 
 
 
 function App() {
   return (
    <div className='overflow-hidden'>
-   
-   <Hero/>
-  
-  <Borrow/>
-
-<WhyDefi/>
-
-<BorrowInput/>
-
-        
-
-          <Solution/>
-        
-        <Utilize/>
-
-        <GetToKnowUs/>
-      
-       <Team/>
-    
+   <Fade direction='left'>
+        <Hero/>
+    </Fade>
+   <Fade direction='right'>
+      <Borrow/>
+    </Fade>  
+    <Slide direction='left'>
+    <WhyDefi/>
+    <BorrowInput/>
+    </Slide>
+    <Slide direction='right'>
+    <Solution/>
+    <Utilize/>
+    </Slide> 
+    <Zoom direction='down'>
+    <GetToKnowUs/>
+    </Zoom>   
+    <Zoom direction='up'>
+    <Team/>
+    </Zoom>      
+    <Slide direction='left'>
     <Faq/>
+    </Slide>
+    <Slide direction='left'>
     <RoadMap/>
+    </Slide>
+    
   
    <Contact/>
    
