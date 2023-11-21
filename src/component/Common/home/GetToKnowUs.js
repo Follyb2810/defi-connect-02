@@ -1,8 +1,8 @@
 import React from 'react'
 import Template from './../../Shared/Template'
 import { geToKnowData, templatetHead } from '../../data'
-import { Button, Card, Col, Row } from 'react-bootstrap'
-import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa'
+import {  Col, Row } from 'react-bootstrap'
+
 const GetToKnowUs = () => {
     const getToknow = templatetHead[7]
     const {title} =getToknow.getToKnowUs
