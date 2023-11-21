@@ -41,7 +41,6 @@ function App() {
         <GetToKnowUs/>
       </Zoom>
        <Zoom>
-       <Partner/>
        <Team/>
     </Zoom>
     <Slide bottom>
