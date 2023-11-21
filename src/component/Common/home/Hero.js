@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Col, Row } from 'react-bootstrap'
 import {FaGreaterThan} from 'react-icons/fa'
-import { Fade } from 'react-reveal'
+
 import { Link } from 'react-router-dom'
 
 const Hero = () => {
@@ -10,7 +10,7 @@ const Hero = () => {
         
         <Row className='justify-content-between align-items-center mt-5 pt-5 overflow-hidden'>
         <Col sm={12} md={7} className=''>
-        <Fade left>
+        
         <h2 className='fs-head'>Fastest & Secure
         Platform to <b className='colorBlue me-2'>BORROW</b>
         your crypto.</h2>
@@ -23,12 +23,12 @@ const Hero = () => {
         </Link>
         </Button>
         
-        </Fade>
+        
     </Col>
     <Col sm={12} md={5}>
-    <Fade right>
+    
         <img src={require('./../../asset/images/hero.svg').default} className='hero'  alt=''/>
-        </Fade>
+        
       </Col>
            
             
