@@ -51,7 +51,7 @@ const Contact = () => {
       }
     } catch (error) {
       console.error('Error:', error);
-      notify(error.data.message);
+      notify(error.message);
     }
   };
 
