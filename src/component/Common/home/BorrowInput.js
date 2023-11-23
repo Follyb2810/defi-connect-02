@@ -19,10 +19,9 @@ const BorrowInput = () => {
 
 
   const BorrowInpuData = templatetHead[6];
-  console.log(BorrowInpuData);
   
   const { para, title } = BorrowInpuData.BorrowInputData;
-  console.log(title);
+  
      
   
 

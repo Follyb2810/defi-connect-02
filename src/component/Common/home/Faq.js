@@ -1,6 +1,6 @@
 import React from 'react';
 import { FagData } from './../../data';
-import Template from '../../Shared/Template';
+
 
 const Fags = () => {
   return (

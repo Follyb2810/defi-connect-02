@@ -9,7 +9,7 @@ import { Col, Row } from 'react-bootstrap';
 const Utilize = () => {
     const UtilizeContent = templatetHead[2];
     const { UtilizeContent:{title, para}} = UtilizeContent;
-    console.log(UtilizeContent)
+    
 
     return (
         <Template title={title} para={para} className='container'>

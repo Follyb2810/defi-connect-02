@@ -6,7 +6,7 @@ import {  Col, Row } from 'react-bootstrap'
 const GetToKnowUs = () => {
     const getToknow = templatetHead[7]
     const {title} =getToknow.getToKnowUs
-    console.log(getToknow)
+    
     return (
         <Template title={title}>
         <Row className='justify-content-between align-items-center gap-2 gap-md-0 container-fluid'>

@@ -6,8 +6,7 @@ import { Button, Col, Row } from 'react-bootstrap'
 const RoadMap = () => {
     const RoadmapData = templatetHead[5]
     const {title}= RoadmapData.RoadMapData
-    console.log(RoadmapData)
-    console.log(title)
+    
     return (
         <Template title={title} className='text-primary border border-2 border-light-subtle p-3'>
         <Button className='w-50 mx-auto'>CORE MISSION</Button>

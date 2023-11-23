@@ -25,8 +25,8 @@ const WhyDefi = () => {
           <Col sm={12} md={8} className='container-fluid'>
             <Stack>
               {whyDefiContent.map((content, index) => (
-                <Slide direction='left' cascade>
-                <Stack direction='horizontal' className='text-start  border-bottom border-5 p-2 ' key={index}>
+                <Slide direction='left' cascade key={index}>
+                <Stack direction='horizontal' className='text-start  border-bottom border-5 p-2 ' >
                   <div className='item-first text-wrap fs-why'>{content.itemFirst}</div>
                   <div className='item-second-last text-center fs-why ' style={{color:content.itemSecond==='Instant Crypto Credit Lines'?'blue':'green'}}>
                     {content.itemSecond}

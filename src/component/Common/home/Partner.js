@@ -9,7 +9,7 @@ import Img1 from './../../asset/images/partner.jpg'
 const Partner = () => {
     const partner = templatetHead[8]
     const {title,partnersImg} = partner.partnerData
-    console.log(title)
+  
     return (
         <Template title={title}>
         
