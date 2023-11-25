@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -12,19 +12,43 @@ import "slick-carousel/slick/slick-theme.css";
 import MarketPage from './component/pages/MarketPage';
 import LoanPage from './component/pages/LoanPage';
 import SavingPage from './component/pages/SavingPage';
+import Loading from './component/Shared/Loading';
 
+ const AppLazy = lazy(()=>import('./App'))
+ const MarketPageLazy = lazy(()=>import('./component/pages/MarketPage'))
+ const LoanPageLazy = lazy(()=>import('./component/pages/LoanPage.js'))
+ const SavingPageLazy = lazy(()=>import('./component/pages/SavingPage.js'))
 
  const router = createBrowserRouter(createRoutesFromElements(
-  <Route path='/' element={<Layout/>}>
-    <Route path='' element={<App/>}/>
-    <Route path='/borrow/' element={<MarketPage/>}/>
-    <Route path='/loan' element={<LoanPage/>}/>
-    <Route path='/saving' element={<SavingPage/>}/>
-  </Route>
+  
+        <Route path='/' element={<Layout/>}>
+            <Route path='' element={
+            <Suspense fallback={<Loading/>}>
+            <AppLazy/>
+            </Suspense>
+            }/>
+            <Route path='/borrow/' element={
+              <Suspense fallback={<Loading/>}>
+              <MarketPageLazy/>
+              </Suspense>
+            }/>
+            <Route path='/loan' element={
+              <Suspense fallback={<Loading/>}>
+              <LoanPageLazy/>
+              </Suspense>
+            }/>
+            <Route path='/saving' element={
+              <Suspense fallback={<Loading/>}>
+              <SavingPageLazy/>
+              </Suspense>
+            }/>
+        </Route>
+  
  ))
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+  
     <RouterProvider router={router}/>
   </React.StrictMode>
 );
