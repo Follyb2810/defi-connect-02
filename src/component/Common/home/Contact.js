@@ -22,10 +22,19 @@ const Contact = () => {
 
   const notify = (mes) => toast(mes);
 
+  const isFormValid = () => {
+    return name.trim() !== '' && email.trim() !== '' && message.trim() !== '';
+  };
+
   const submitData = async (e) => {
     e.preventDefault();
 
     try {
+      if (!isFormValid()) {
+        notify('Please fill in all the required fields.');
+        return;
+      }
+
       const config = {
         headers: {
           'Content-type': 'application/json'
@@ -33,8 +42,10 @@ const Contact = () => {
       };
 
       const response = await axios.post(
-        'https://folly-email-n8te.vercel.app/email',{name,email,message},config);
-        console.log(response)
+        'https://folly-email-n8te.vercel.app/email',
+        { name, email, message },
+        config
+      );
 
       if (response.status === 200) {
         setFormData({
@@ -44,14 +55,12 @@ const Contact = () => {
         });
         notify(response.data.message);
         console.log('Data submitted successfully');
-        console.log(formdata); // Move the console.log here
       } else {
         console.error('Failed to submit data');
         notify(response.data.message);
       }
     } catch (error) {
-      console.error('Error:', error);
-      notify(error.message);
+      notify(`Error: ${error.response.data.message}`);
     }
   };
 
@@ -91,7 +100,7 @@ const Contact = () => {
             required
           />
           <div className="d-flex justify-content-center mt-4">
-            <Button type="submit" className="w-50">
+            <Button type="submit" className="w-50" disabled={!isFormValid()}>
               Submit
             </Button>
           </div>
@@ -103,6 +112,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
 
 // const submitDataF = async (e) => {
