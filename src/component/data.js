@@ -37,11 +37,7 @@ const NavData=[
         name:'Usecases',
         path:'#usecase'
     },
-    {
-        id:2,
-        name:'Partner',
-        path:'#partner'
-    },
+    
     {
         id:3,
         name:'Road Map',
