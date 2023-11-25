@@ -26,7 +26,7 @@ function BorrowHeader() {
           </Nav.Link>
             ))
           }
-          <Button className='ms-2'>Connect Button</Button>
+          <Button className='ms-2'>Comming Soon</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
