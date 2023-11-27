@@ -8,9 +8,9 @@ const RoadMap = () => {
     const {title}= RoadmapData.RoadMapData
     
     return (
-        <Template title={title} className='text-primary border border-2 border-light-subtle p-3'>
+        <Template title={title} className='text-primary border border-2 border-light-subtle p-3' >
         <Button className='w-50 mx-auto'>CORE MISSION</Button>
-        <Row className='text-white mt-5 justify-content-between container-fluid' id='roadmap'>
+        <Row className='text-white mt-5 justify-content-between container-fluid g-2' id='roadmap' >
           {
             RoadDataMap.map((data,index)=>(
                 <Col xm={12} md={6} key={index}>

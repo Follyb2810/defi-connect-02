@@ -2,7 +2,6 @@ import React from 'react'
 import Template from '../../Shared/Template'
 import { SliderData, templatetHead } from '../../data';
 import SliderContainer from '../../Shared/SliderContainer';
-import CardSlider from '../../Shared/CardSlider';
 import { Col, Row } from 'react-bootstrap';
 
 
@@ -12,7 +11,7 @@ const Utilize = () => {
     
 
     return (
-        <Template title={title} para={para} className='container'>
+        <Template title={title} para={para} className='container-fluid'>
           <Row className='justify-content-between gap-1 overflow-hidden'>
           <SliderContainer>
           {SliderData.map((data, index) => (

@@ -2,7 +2,6 @@ import React from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import NavBar from './Navbar';
 import Footer from './Footer';
-import { Container } from 'react-bootstrap';
 import BorrowHeader from './BorrowHeader';
 
 const Layout = () => {
@@ -10,7 +9,7 @@ const Layout = () => {
   const pathName = location.pathname;
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }} className='container-lg'>
       { pathName === '/borrow' || pathName === '/saving' || pathName === '/loan' ? <BorrowHeader /> : <NavBar />}
 
       <div style={{ flex: 1 }}>

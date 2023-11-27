@@ -1,8 +1,7 @@
 import React from 'react'
 import Template from '../../Shared/Template'
 import { solutionDataCard, templatetHead } from '../../data'
-import { Button, Card, Col, Row } from 'react-bootstrap'
-import { FaGreaterThan } from 'react-icons/fa'
+import { Button, Col, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const Solution = () => {
@@ -10,7 +9,7 @@ const Solution = () => {
     const {solutionData:{title}}=solutionData
     return (
         <Template title={title} className='text-primary'>
-           <Row className='container-fluid'>
+           <Row className='container-fluid justify-content-between align-items-center'>
             <Col sm={12} md={6}>
               {
                 solutionDataCard.map((sol,index)=>(
@@ -27,7 +26,7 @@ const Solution = () => {
               }
             </Col>
             <Col sm={12} md={6}>
-               <img src={require('./../../asset/images/sol.svg').default} alt='' className='img-fluid'/>
+               <img src={require('./../../asset/images/sol.svg').default} alt='' className='solutionImg' />
             </Col>
             <Button className='w-25 mx-auto p-2'>
               <Link to='/borrow' className='text-white'>

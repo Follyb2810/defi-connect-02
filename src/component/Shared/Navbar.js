@@ -4,7 +4,8 @@ import { NavData } from '../data';
 import { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import whitePaper from './../asset/docs/Whitepaper_DeFi_Connect.docx';
+import whitePaper from './../asset/docs/Whitepaper_DeFi_Connect.pdf';
+import Logo from '../asset/images/deficonnect.png'
 
 function NavBar() {
   const [navColor, setNavColor] = useState('');
@@ -33,10 +34,10 @@ function NavBar() {
   const notify = (message) => toast(message);
 
   return (
-    <Navbar expand="md" className="bg fixed-top " style={{ backdropFilter: 'blur(5px)' }}>
-      <Container fluid>
+    <Navbar expand="sm" className="bg fixed-top " style={{ backdropFilter: 'blur(5px)' }}>
+      <Container fluid='lg'>
         <Navbar.Brand as={NavLink} to="/">
-          <img src={require('./../asset/images/deficonnect _lo.svg').default} className='logo' alt='' />
+          <img src={Logo} className='logo' alt='' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

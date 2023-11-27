@@ -9,11 +9,10 @@ const Hero = () => {
     return (
         <section className='container-fluid'>
         
-        <Row className='justify-content-between align-items-center mt-5 pt-5 overflow-hidden'>
+        <Row className='justify-content-between align-items-center pt-5 overflow-hidden' style={{marginTop:100}}>
         <Col sm={12} md={7} className=''>
         <Slide direction='left'>
-        
-            <h2 className='fs-head'>Fastest & Secure
+           <h2 className='fs-head'>Fastest & Secure
             Platform to <b className='colorBlue me-2'>BORROW</b>
             your crypto.</h2>
             <p className='fs-subhead fw-light'>Borrow without selling your crypto with rates 
@@ -24,11 +23,9 @@ const Hero = () => {
             <span className='fw-bold text-white'>BORROW NOW <FaGreaterThan/></span>
             </Link>
             </Button>
-        </Slide>
-        
-        
+        </Slide>    
     </Col>
-    <Col sm={12} md={5}>
+    <Col sm={12} md={5} className='mt-3 mt-md-0'>
      <Slide direction='left'>
         <img src={require('./../../asset/images/hero.svg').default} className='hero'  alt=''/>
      </Slide>

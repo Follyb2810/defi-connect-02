@@ -10,12 +10,12 @@ const footData =[
     },
     {
         social:'Twiter',
-        path:'',
+        path:'https://twitter.com/DeFi_credit?t=DmrsbNRMLVVFsFM6PopMpA&s=09',
         icon:<FaTwitter/>
     },
     {
         social:'Telegram',
-        path:'',
+        path:'https://t.me/+699uMw5F20I3YTY0',
         icon:<FaTelegram/>
     },
     {
@@ -39,12 +39,12 @@ const NavData=[
     },
     
     {
-        id:3,
+        id:2,
         name:'Road Map',
         path:'#roadmap'
     },
     {
-        id:4,
+        id:3,
         name:'Contact',
         path:'#contact'
     }
@@ -134,7 +134,7 @@ const templatetHead =[
                     {
                         whyDefiData:{
                             index:1,
-                            title:'WHY USE DEFI CONNECT',
+                            title:'WHY USE DEFI CONNECT CREDIT',
                             para:`Get as much or as little as you want, whenever you want with the most flexible crypto credit line out there.`,
                             
                             img:require('./../component/asset/images/borrowImg.svg').default,
@@ -146,7 +146,7 @@ const templatetHead =[
                         UtilizeContent :{
                             index:2,
                             title:`How to Best Utilize Your Credit Line`,
-                            para:`With a minimum of $50 and a maximum of $2M,Defi Connect is here to help you afford the necessities and luxuries you are thinking about.`
+                            para:`With a minimum of $50 and a maximum of $2M,Defi Connect Credit is here to help you afford the necessities and luxuries you are thinking about.`
                         }
                         
                     },
@@ -166,7 +166,7 @@ const templatetHead =[
                     {
                         RoadMapData:{
                             index:5,
-                            title:'DEFICONNECT 2023 ROAD MAP',
+                            title:'DEFI CONNECT CREDIT 2023 ROAD MAP',
                         
                         }
                     },
@@ -183,7 +183,7 @@ const templatetHead =[
                         
                         getToKnowUs:{
                             index:7,
-                            title:'More Ways to Get the Best Out of Defi Connect',
+                            title:'More Ways to Get the Best Out of Defi Connect Credit',
                             
                         
                         }
@@ -312,8 +312,8 @@ const SliderData = [
 const FagData = [
     {
             id:0,
-            ques:"How do DEFI CONNECT works?",
-            ans:`DeFi Connect operates as a decentralized finance (DeFi) platform that tokenizes traditional assets, allowing users to invest in a variety of assets without direct ownership. It employs smart contracts for the creation of synthetic tokens, backed by collateral. Users can deposit crypto assets as collateral to access a credit line, trade synthetic tokens, and participate in decentralized investment funds.`
+            ques:"How do DEFI CONNECT CREDIT works?",
+            ans:`DeFi Connect Credit operates as a decentralized finance (DeFi) platform that tokenizes traditional assets, allowing users to invest in a variety of assets without direct ownership. It employs smart contracts for the creation of synthetic tokens, backed by collateral. Users can deposit crypto assets as collateral to access a credit line, trade synthetic tokens, and participate in decentralized investment funds.`
     },
     {
             id:1,
@@ -337,8 +337,8 @@ const FagData = [
     },
     {
             id:5,
-            ques:`How does DEFI CONNECT keep my collateral safe?`,
-            ans:`DEFI CONNECT employs advanced security measures, including cold wallets for storing crypto assets, multi-signature protocols, and regular security audits. These measures are designed to protect user collateral from potential vulnerabilities and ensure a secure platform for users.`
+            ques:`How does DEFI CONNECT CREDIT keep my collateral safe?`,
+            ans:`DEFI CONNECT CREDIT employs advanced security measures, including cold wallets for storing crypto assets, multi-signature protocols, and regular security audits. These measures are designed to protect user collateral from potential vulnerabilities and ensure a secure platform for users.`
     }
     
 ]
@@ -373,7 +373,7 @@ const solutionDataCard =[
 ]
 const InterestData=[
     {
-        title:'Defi Connect Card',
+        title:'Defi Connect Credit Card',
         des:`All Defi Card purchases are deducted 
         from your available credit line while 
         your portfolio remains intact.`,
@@ -387,7 +387,7 @@ const InterestData=[
         btn:'Learn More'
     },
     {
-        title:'Defi Connect Card',
+        title:'Defi Connect Credit Card',
         des:`All Defi Card purchases are deducted 
         from your available credit line while 
         your portfolio remains intact.`,
@@ -414,16 +414,16 @@ const geToKnowData = [
         img:require('./asset/images/govern.svg').default,
         para:`Stay active in the community and take
         part in decisions that shape the future
-        of Defi connect.`
+        of Defi connect Credit.`
     },
 ]
 
 const PartnerContent= {
-    subtitle:`Move Faster with Deficonnect Partners`,
+    subtitle:`Move Faster with Defi Connect Credit  Partners`,
     body:`We know your time is valuable. Find a partner
     to quickly
-    deliver the Deficonnect experience 
-    you need of use Deficonnect Apps
+    deliver the Defi connect experience 
+    you need of use Defi connect Apps
     to simply 
     borrow your crypto with o% interest.`,
     img1:require('./asset/images/cost.svg').default,
@@ -438,11 +438,11 @@ const RoadDataMap =[
         id:1,
         head:`Stage 1: Development and Launch of Borrow Platform`,
         body:`
-        Q1 [2024]: DeFi Connect Foundation, recruitment of core 
+        Q1 [2024]: DeFi Connect Credit Foundation, recruitment of core 
         development and security team, development and audit 
         of smart contracts for the Borrow platform, internal platform 
         testing.`,
-        body2:`Q2 [2024]: DeFi Connect launched in closed beta with a 
+        body2:`Q2 [2024]: DeFi Connect Credit launched in closed beta with a 
         select group of users, compilation of feedback and 
         adjustments according to the feedback received, and 
         the launch of the Borrow platform on Nautilus Chain.`
@@ -479,7 +479,7 @@ const RoadDataMap =[
          consider introducing additional services like 
         lending and staking.`,
         body2:`Q4 [2025]: Evaluate the possibility of becoming a regulated 
-        entity, release version 2.0 of DeFi Connect with significant 
+        entity, release version 2.0 of DeFi Connect Credit with significant 
         improvements to the user experience, and expand 
         the user base globally.`
     },
